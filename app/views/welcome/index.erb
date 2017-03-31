@@ -46,7 +46,6 @@ window.location = "http://www.jdmauctionwatch.com";
 }
 
 </script>
-<p>
 <input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
 <input id="redirect" type="button" value="redirect" onclick="redirectFunction();" />
 <html>
@@ -63,4 +62,18 @@ function mOut(obj) {
     obj.innerHTML = "Swipe"
 }
 </script>
-</p>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<script>
+function mDown(obj) {
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = "Release Me";
+}
+
+function mUp(obj) {
+    obj.style.backgroundColor="#D94A38";
+    obj.innerHTML="Thank You";
+}
+</script>
