@@ -48,3 +48,17 @@ window.location = "http://www.jdmauctionwatch.com";
 </script>
 <input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
 <input id="redirect" type="button" value="redirect" onclick="redirectFunction();" />
+<html>
+<body>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Swipe For Magic</div>
+
+<script>
+function mOver(obj) {
+    obj.innerHTML = "Haha you thought there was magic!"
+}
+
+function mOut(obj) {
+    obj.innerHTML = "Swipe For Magic"
+}
+</script>
