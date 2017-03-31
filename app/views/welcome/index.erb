@@ -1,8 +1,5 @@
 
 <header><font size="5" color="purple" face="arial"> Jordan's Website </font></header>
-<% for i in 0..(ENV['TIMES'] ? ENV['TIMES'].to_i : 2) do %>
-  <p>Hello World #<%= i %>!</p>
-<% end %>
 <h2><b><font size="3" color="green" face="verdana">Hello World</font></b></h2>
 <p>
   <%= Time.now %>
@@ -11,11 +8,11 @@
 <%= Cowsay.say("Moo!", "Cow") %>
 </pre>
 <p>
-<h2><i><font size="5" color="purple" face="arial">This is a countdown for when Jordan finishes his Work Experience! </font></i></h2>
+<h2><i><font size="5" color="purple" face="arial">This is a countdown until 2020! </font></i></h2>
 </p>
 <p id="demo"></p>
 <script>
-var countDownDate = new Date("Mar 31, 2017 18:30:00").getTime()
+var countDownDate = new Date("Jan 1, 2018 00:00:00").getTime()
 var x = setInterval(function() {
   var now = new Date().getTime()
 var distance = countDownDate - now;
@@ -27,7 +24,7 @@ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     + minutes + "m " + seconds + "s ";
     if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Jordan has finished his Work Experience";
+    document.getElementById("demo").innerHTML = "It is now the year 2018!";
   }
 }, 1000);
 </script>
@@ -50,7 +47,7 @@ window.location = "http://www.jdmauctionwatch.com";
 <input id="Website" type="button" value="Website" onclick="redirectFunction();" />
 <html>
 <body>
-<div onmouseover="mOver(this)" onmouseout="mOut(this)"style="background-color:#4661EE;width:120px;height:20px;padding:40px;">
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"style="background-color:#8FAABB;width:120px;height:20px;padding:40px;">
 Swipe </div>
 
 <script>
