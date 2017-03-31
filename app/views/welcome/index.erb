@@ -34,3 +34,11 @@ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 <p>
 <img src="http://24.media.tumblr.com/1ad5d049e13c105a2d0ce019a7e121cd/tumblr_n2qgk2Nvl11qdyl0to1_r1_500.gif" alt="Wave" style="width:500px;height:504px;"><img src="http://24.media.tumblr.com/231b6e176476334de0905211f30c1a2a/tumblr_n6045x7tI21spoqhxo1_500.gif" alt="80's Retro Sprinter" style="width:500px;height;504px;"><img src="https://media.giphy.com/media/UvPvsX9oMlMWs/giphy.gif" alt="Windows 98 PC" style="width=500px;height=504px;">
 </p>
+<input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
+<script>
+//- Using a function pointer:
+document.getElementById("clickMe").onclick = doFunction;
+
+//- Using an anonymous function:
+document.getElementById("clickMe").onclick = function () { alert('hello!'); };
+</script>
